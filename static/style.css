@@ -1,0 +1,239 @@
+.body, html{
+    background-color: rgb(128 255 206);
+}
+.navbar {
+    /* background-color: rgb(168, 217, 217); */
+    background-color: rgb(128 255 206);
+    color: black;
+    display: flex;
+    justify-content: center; /* Space the items evenly */
+    font-family: cursive;
+    
+    /* padding: 0 20px; Add some padding for better spacing */
+}
+
+.navbar ul {
+    list-style-type: none; /* Remove bullet points from the list */
+    display: flex;
+    width: 100%;   
+    margin-top: 30px; 
+    
+}
+
+.navbar ul li {
+    margin-right: 40px; /* Add spacing between the list items */
+    font-weight: bold;
+    font-size: larger;
+    
+}
+
+.navbar a {
+    color: initial; /* Set the initial color */
+    transition: color 0.3s ease; /* Adjust the duration and easing as needed */
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: rgb(208, 83, 55);
+}
+.navbar_mine a{
+    text-decoration: none;
+}
+
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    height: 500px;
+}
+
+.front h1{
+    font-size: 50px;
+}
+
+.fridgeit-logo {
+    color: #5e54e0;
+    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.3));
+
+    /* text-shadow: 0 0 10px rgba(255, 0, 0, 0.6); */
+    text-shadow:  0 0 20px rgba(159, 120, 120, 0.58); 
+    
+    /* Optional: transition for hover effects */
+    transition: transform 0.3s ease, filter 0.3s ease;
+
+    /* Optional: hover effect for a more interactive feel */
+    &:hover {
+        transform: scale(1.1); /* Slightly increase size on hover */
+        filter: drop-shadow(5px 5px 8px rgba(0, 0, 0, 0.5)); /* stronger shadow on hover */
+    }
+}
+
+.front-text{
+    color: black; 
+    margin-top: 10px;
+    line-height: 2;
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+
+/* Container for centering content */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Text input and form styling */
+.txti {
+    margin-top: 3%;
+    text-align: center;
+    background-color: #ffffff; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+#itemForm textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+#itemForm button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#itemForm button:hover {
+    background-color: #45a049;
+}
+
+#item-list {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    width: 70%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#item-list th, #item-list td {
+    border: 1px solid #c34141;
+    text-align: center;
+    padding: 12px;
+    width: 200px;
+}
+
+#item-list th:nth-child(1),
+#item-list td:nth-child(1) {
+    background-color: #f0c4c4;
+    color: black;
+}
+
+#item-list th:nth-child(2),
+#item-list td:nth-child(2) {
+    background-color: #c4e5c4;
+    color: black;
+}
+
+#item-list tr:nth-child(even) td {
+    background-color: #f5f5f5;
+}
+
+#item-list tr:hover td {
+    background-color: #ffe0b2;
+}
+
+.txti>h1{
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 1%;
+}
+
+
+/* .loginform {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+} */
+/* General styles for the login form */
+.login {
+    /* margin-top: 50% auto; */
+    width: 300px;
+    margin: 5% auto;
+    padding: 30px 25px;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Heading style */
+.login h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form group styles */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Label styles */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Input styles */
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Button styles */
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+
+/* #signup{
+    align-items: center;
+    justify-content: center;
+} */

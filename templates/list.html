@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> 
+
+
+    <title>Item List</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+
+    <div class = "page">
+        <div class = "navbar">
+            <ul class="navbar">
+                <li><a href = "dashboard">FridgeIt</a></li>
+                <!-- <li><a href = "{{ url_for('login') }}">Login</a></li>
+                <li><a href = "{{ url_for('register') }}">Register</a></li> -->
+                <li><a href="{{ url_for('logout') }}">Log Out</a></li>
+            <li><a href="{{ url_for('showList') }}">My List</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- <div class = "txti">
+      <h2>Add Items to List</h2>
+      <h2>Your Email: {{ email }}</h2>
+      <form id="itemForm">
+          <textarea id="itemInput" rows="3" placeholder="Enter item name here..."></textarea><br><br>
+          <button type="submit">Add Item</button>
+      </form>
+  
+      <ul id="itemList"></ul>
+    </div>
+
+
+    <div>
+        <table id = "item-list">
+            <tr>
+              <th>Dish</th>
+              <th>Expiry</th>
+            </tr>
+          </table>    
+    </div> -->
+
+    <div class="container">
+      <div class="txti">
+          <h1>Add Items to List</h1>
+          <form id="itemForm">
+              <textarea id="itemInput" rows="3" placeholder="Enter item name here..."></textarea><br><br>
+              <button type="submit" id = "submitBtn">Add Item</button>
+              <button type="submit" id = "emailBtn">Email List</button>
+              <button type="submit" id = "clearBtn">Clear List</button>
+          </form>
+          <ul id="itemList"></ul>
+      </div>
+      <div>
+          <table id="item-list">
+              <tr>
+                  <th>Dish</th>
+                  <th>Expiry</th>
+              </tr>
+          </table>
+      </div>
+  </div>
+
+
+  
+
+    
+
+    
+    
+</body>
+
+<script src="static/script.js"></script>
+</html>

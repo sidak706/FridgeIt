@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <title>Register</title>
+</head>
+
+<body>
+    <div class = "page">
+        <div class = "navbar">
+            <ul class="navbar">
+                <li><a href = "/">FridgeIt</a></li>
+                <li><a href = "{{ url_for('login') }}">Login</a></li>
+                <li><a href = "{{ url_for('register') }}">Register</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        {{ form.username }}
+        {{ form.password }}
+        {{ form.email }}
+        {{ form.submit }}
+    </form> -->
+
+    <div class = "login">
+        <form method="POST"  action="">
+            <h2>Register</h2>
+            {{ form.hidden_tag() }}
+            <div class="form-group">
+                <label for="username">Username</label>
+                {{ form.username }}
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                {{ form.password }}
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                {{ form.email }}
+            </div>
+            <button type="submit" class="submit-btn">{{ form.submit.label.text }}</button>
+        </form>
+        <br>
+        <a href="{{ url_for('login') }}">Already have an account? Login</a>
+    </div>
+
+    <!-- <a href="{{ url_for('login') }}">Already have an account? Log In</a> -->
+</body>
+
+</html>
